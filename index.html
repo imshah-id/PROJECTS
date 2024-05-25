@@ -5,78 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cafeteria</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="cafe.js"></script>
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="menu.html" class="dropbtn">Menu</a>
+        <li><a class="homeBtn">Home</a></li>
+        <li >
+          <a  class="dropbtn menuBtn">Menu</a>
           <div class="dropdown-content">
             <a href="#main">Main Dishes</a>
             <a href="#desserts">Desserts</a>
             <a href="#beverages">Beverages</a>
           </div>
         </li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="contactBtn">Contact</a></li>
       </ul>
     </nav>
-    <header>
-      <img src="images/logo.png" alt="Cafeteria Logo" />
-      <h1>Welcome to Our Cafeteria</h1>
-    </header>
-    <section class="Home">
-      <h2>About Us</h2>
-      <p>
-        Our cafeteria offers the best meals in town. We use fresh ingredients to
-        ensure the highest quality.
-      </p>
-    </section>
-    <header>
-      <h1>Our Menu</h1>
-    </header>
-    <section id="main">
-      <h2>Main Dishes</h2>
-      <ul>
-        <li>Spaghetti Bolognese - $12</li>
-        <li>Grilled Chicken Salad - $10</li>
-        <li>Vegetarian Pizza - $11</li>
-      </ul>
-    </section>
-    <section id="desserts">
-      <h2>Desserts</h2>
-      <ul>
-        <li>Chocolate Cake - $5</li>
-        <li>Apple Pie - $4</li>
-        <li>Ice Cream - $3</li>
-      </ul>
-    </section>
-    <section id="beverages">
-      <h2>Beverages</h2>
-      <ul>
-        <li>Coffee - $2</li>
-        <li>Tea - $1.5</li>
-        <li>Smoothie - $4</li>
-      </ul>
-    </section>
-    <header>
-      <h1>Contact Us</h1>
-    </header>
-    <section class="contact">
-      <h2>Get in Touch</h2>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+    <div class="homePage">
+
+      <header>
+        <!-- <img src="images/logo.png" alt="Cafeteria Logo" /> -->
+        <h1>Welcome to Our Cafeteria</h1>
+      </header>
+      <section >
+        <h2>About Us</h2>
+        <p>
+          Our cafeteria offers the best meals in town. We use fresh ingredients to
+          ensure the highest quality.
+        </p>
+      </section>
+    </div>
+    <div class="menuPage hidden">
+      <header>
+        <h1>Our Menu</h1>
+      </header>
+      <section id="main">
+        <h2>Main Dishes</h2>
+        <ul>
+          <li>Spaghetti Bolognese - $12</li>
+          <li>Grilled Chicken Salad - $10</li>
+          <li>Vegetarian Pizza - $11</li>
+        </ul>
+      </section>
+      <section id="desserts">
+        <h2>Desserts</h2>
+        <ul>
+          <li>Chocolate Cake - $5</li>
+          <li>Apple Pie - $4</li>
+          <li>Ice Cream - $3</li>
+        </ul>
+      </section>
+      <section id="beverages">
+        <h2>Beverages</h2>
+        <ul>
+          <li>Coffee - $2</li>
+          <li>Tea - $1.5</li>
+          <li>Smoothie - $4</li>
+        </ul>
+      </section>
+    </div>
+    <div class="contactPage hidden">
+
+      <header>
+        <h1>Contact Us</h1>
+      </header>
+      <section >
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </div>
     <footer>
       <p>&copy; 2024 Cafeteria. All rights reserved.</p>
     </footer>
+    <script src="cafe.js"></script>
   </body>
 </html>

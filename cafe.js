@@ -1,4 +1,5 @@
-// Wait for the DOM to fully load before running the script
+`use strict`;
+console.log(document.querySelector(".homeBtn"));
 document.addEventListener("DOMContentLoaded", function () {
   // Get all dropdown buttons
   var dropdownBtns = document.querySelectorAll(".dropbtn");
@@ -23,4 +24,24 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdownContent.style.display = "none";
     });
   });
+});
+let contactForm = document.querySelector(".contactPage");
+let homePage = document.querySelector(".homePage");
+let menu = document.querySelector(".menuPage");
+
+document.querySelector(".homeBtn").addEventListener("click", function () {
+  menu.classList.add("hidden");
+  homePage.classList.remove("hidden");
+  contactForm.classList.add("hidden");
+});
+
+document.querySelector(".menuBtn").addEventListener("click", function () {
+  menu.classList.remove("hidden");
+  contactForm.classList.add("hidden");
+  homePage.classList.add("hidden");
+});
+document.querySelector(".contactBtn").addEventListener("click", function () {
+  contactForm.classList.remove("hidden");
+  menu.classList.add("hidden");
+  homePage.classList.add("hidden");
 });
